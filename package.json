@@ -1,18 +1,20 @@
 {
-  "name": "bigbazu",
+  "name": "Bigbazu",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple chat program",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "mocha -R spec test/test.js --exit"
   },
-  "author": "",
+  "author": "Alvaro Nabangi",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
   }
 }
